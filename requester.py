@@ -14,7 +14,7 @@ def get_cantine_weekly_menu():
     menu.append([children[9].text, children[10].text])
     menu.append([children[12].text, children[13].text])
     menu.append([children[15].text, children[16].text])
-    menu.append(["Bajer", "Bajer"])
-    menu.append(["Treo", "Treo"])
+    menu.append(["            Bajer", "         Bajer"])
+    menu.append(["            Treo", "         Treo"])
     return(menu)
 

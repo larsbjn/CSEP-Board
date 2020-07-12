@@ -8,8 +8,7 @@ app = Flask(__name__)
 @app.route('/')
 def index():
     week = get_cantine_weekly_menu()
-    datetime.datetime.today().weekday()
-    today = week[0]
+    today = week[datetime.datetime.today().weekday()]
     normal = today[0]
     vegan = today[1]
     return render_template('index.html', normal=normal[12:], vegan=vegan[9:])
